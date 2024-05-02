@@ -9,7 +9,7 @@ build:
     output_files: output/*.zip
     image_template: vault-1.2
 deploy:
-    context: mpmathew/DEV
+    context: exf/DEV
     type: statefulset
     ingress: none
     replicas: 1
