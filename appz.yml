@@ -7,9 +7,9 @@ build:
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: vault-1.16
+    image_template: vault-1.2
 deploy:
-    context: exf/DEV
+    context: mpmathew/DEV
     type: statefulset
     ingress: none
     replicas: 1
@@ -27,5 +27,5 @@ volumes:
     size: 5Gi
 
 properties:
-    revision: 57
+    revision: 60
     ENABLE_AUTO_PASSWORD: True
